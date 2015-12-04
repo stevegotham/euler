@@ -9,7 +9,7 @@ function isPrime(num) {
 		}
 	}
 	return true;
-}
+};
 function nthPrime(n) {
 	var primes = [];
 	for (p=1; primes.length<=n; p++) {
@@ -18,4 +18,4 @@ function nthPrime(n) {
 		}
 	}
 console.log(primes[primes.length-1]);
-}
+};

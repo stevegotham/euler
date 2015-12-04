@@ -12,4 +12,4 @@ function sumEvenFibocci(x) {
 		}
 	}
 	console.log(sumEven);
-}
+};
