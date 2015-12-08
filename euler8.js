@@ -6,8 +6,11 @@ var num = "731671765313306249192251196744265747423553491949349698352031277450632
 var numArray = num.split("").map(Number);
 var sum = 0;
 var largest = [];
-for (var i=0;i<numArray.length-12;i++) {
-	var g = [numArray[i],numArray[i+1],numArray[i+2],numArray[i+3],numArray[i+4],numArray[i+5],numArray[i+6],numArray[i+7],numArray[i+8],numArray[i+9],numArray[i+10],numArray[i+11],numArray[i+12]];
+for (i=0;i<numArray.length-12;i++) {
+	var g = [];
+	for (j=0;j<13;j++) {
+		g.push(numArray[i+j]);
+	}
 	if (noZero(g)) {
 		h = 1;
 		for (j=0;j<13;j++) {
