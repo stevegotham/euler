@@ -26,3 +26,4 @@ console.log(primes[primes.length-1]);
 };
 
 nthPrime(10001);
+
