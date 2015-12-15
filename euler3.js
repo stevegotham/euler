@@ -20,10 +20,8 @@ function largestPrime(number) {
 	var x = Math.sqrt(number);
 	var y = 0;
 	for (var i=0;i<=x;i++) {
-		if (number % i == 0) {
-			if (isPrime(i)) {
-				y = i;
-			}
+		if (number % i == 0 && isPrime(i)) {
+			y = i;
 		}
 	}
 	console.log(y);
